@@ -41,6 +41,7 @@
             PasswordTB = new TextBox();
             LoginBtn = new Button();
             ExitBtn = new Label();
+            label8 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -191,12 +192,26 @@
             ExitBtn.Click += ExitBtn_Click;
             ExitBtn.MouseEnter += ExitBtn_MouseEnter;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Simplon Norm", 11.9999981F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.FromArgb(128, 0, 33);
+            label8.Location = new Point(487, 448);
+            label8.Name = "label8";
+            label8.Size = new Size(339, 18);
+            label8.TabIndex = 8;
+            label8.Text = "Default:  username = admin / password = admin";
+            label8.Click += label8_Click;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(950, 650);
+            Controls.Add(label8);
             Controls.Add(ExitBtn);
             Controls.Add(LoginBtn);
             Controls.Add(PasswordTB);
@@ -234,5 +249,6 @@
         private TextBox PasswordTB;
         private Button LoginBtn;
         private Label ExitBtn;
+        private Label label8;
     }
 }
