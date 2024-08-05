@@ -37,8 +37,6 @@
             AllRB = new RadioButton();
             label4 = new Label();
             MaleRb = new RadioButton();
-            ClassCB = new ComboBox();
-            label1 = new Label();
             PrintBtn = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)StudentDataView).BeginInit();
@@ -114,7 +112,7 @@
             FemaleRB.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             FemaleRB.AutoSize = true;
             FemaleRB.ForeColor = Color.FromArgb(128, 0, 33);
-            FemaleRB.Location = new Point(315, 567);
+            FemaleRB.Location = new Point(685, 80);
             FemaleRB.Margin = new Padding(4);
             FemaleRB.Name = "FemaleRB";
             FemaleRB.Size = new Size(77, 22);
@@ -128,7 +126,7 @@
             AllRB.AutoSize = true;
             AllRB.Checked = true;
             AllRB.ForeColor = Color.FromArgb(128, 0, 33);
-            AllRB.Location = new Point(135, 567);
+            AllRB.Location = new Point(505, 80);
             AllRB.Margin = new Padding(4);
             AllRB.Name = "AllRB";
             AllRB.Size = new Size(43, 22);
@@ -143,7 +141,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Simplon Norm Bold", 11.9999981F, FontStyle.Bold);
             label4.ForeColor = Color.FromArgb(128, 0, 33);
-            label4.Location = new Point(20, 567);
+            label4.Location = new Point(390, 80);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(71, 18);
@@ -155,37 +153,13 @@
             MaleRb.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             MaleRb.AutoSize = true;
             MaleRb.ForeColor = Color.FromArgb(128, 0, 33);
-            MaleRb.Location = new Point(227, 567);
+            MaleRb.Location = new Point(597, 80);
             MaleRb.Margin = new Padding(4);
             MaleRb.Name = "MaleRb";
             MaleRb.Size = new Size(57, 22);
             MaleRb.TabIndex = 71;
             MaleRb.Text = "Male";
             MaleRb.UseVisualStyleBackColor = true;
-            // 
-            // ClassCB
-            // 
-            ClassCB.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            ClassCB.FormattingEnabled = true;
-            ClassCB.Location = new Point(517, 80);
-            ClassCB.Margin = new Padding(4);
-            ClassCB.Name = "ClassCB";
-            ClassCB.Size = new Size(245, 26);
-            ClassCB.TabIndex = 72;
-            ClassCB.SelectedIndexChanged += ClassCB_SelectedIndexChanged;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Simplon Norm Bold", 11.9999981F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(128, 0, 33);
-            label1.Location = new Point(405, 84);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(104, 18);
-            label1.TabIndex = 73;
-            label1.Text = "Select Class: ";
             // 
             // PrintBtn
             // 
@@ -209,8 +183,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(934, 613);
             Controls.Add(PrintBtn);
-            Controls.Add(label1);
-            Controls.Add(ClassCB);
             Controls.Add(MaleRb);
             Controls.Add(FemaleRB);
             Controls.Add(AllRB);
@@ -242,8 +214,6 @@
         private RadioButton AllRB;
         private Label label4;
         private RadioButton MaleRb;
-        private ComboBox ClassCB;
-        private Label label1;
         private Button PrintBtn;
     }
 }

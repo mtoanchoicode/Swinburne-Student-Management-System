@@ -102,7 +102,7 @@ namespace StudentManagementSystem
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             //Search for course
-            CourseDataView.DataSource = course.GetCourseList(new MySqlCommand("SELECT * FROM `course` WHERE CONCAT(`CourseName`) LIKE '%"+searchTB.Text+"%'"));
+            CourseDataView.DataSource = course.GetCourseList(new MySqlCommand("SELECT * FROM `course` WHERE CONCAT(`CourseName`) LIKE '%" + searchTB.Text + "%'"));
             searchTB.Clear();
         }
     }

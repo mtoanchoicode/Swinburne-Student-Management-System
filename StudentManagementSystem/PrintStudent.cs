@@ -27,10 +27,6 @@ namespace StudentManagementSystem
 
         private void PrintStudent_Load(object sender, EventArgs e)
         {
-            //add course to combobox
-            ClassCB.DataSource = course.GetCourseList(new MySqlCommand("SELECT * FROM `course`"));
-            ClassCB.DisplayMember = "CourseName";
-            ClassCB.ValueMember = "CourseName";
             showData(new MySqlCommand("SELECT * FROM `student`"));
         }
         //Function to show student list
@@ -77,11 +73,6 @@ namespace StudentManagementSystem
             printer.FooterSpacing = 15;
             printer.printDocument.DefaultPageSettings.Landscape = true;
             printer.PrintDataGridView(StudentDataView);
-
-        }
-
-        private void ClassCB_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }
